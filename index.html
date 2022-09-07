@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo_List App</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="title">ToDo App</h1>
+      </header>
+       <div class="add_todo">
+          <h4>Add your Todo</h4>
+
+          <div class="inputField">
+            <input type="text" value="">
+            <button class="active">Add</button>
+          </div>
+      </div>
+      <div class="add_list">
+          <ul>
+              <li class="list_items">
+                  <div class="item_left">
+                      <span class="check">
+                          <input type="checkbox">
+                      </span>
+                      <span class="contents" style="text-decoration: none;">Create a video for youtube</span>
+                  </div>
+                  <div class="item_right">
+                      <div class="edit">
+                          <span class="material-symbols-outlined">edit_note</span>
+                      </div>
+                      <div class="delete">
+                        <span class="material-symbols-outlined">delete</span>
+                      </div>
+                  </div>
+              </li>
+              <li class="list_items">
+                <div class="item_left">
+                    <span class="check" onclick="underlined">
+                      <input type="checkbox">
+                    </span>
+                    <span class="contents" style="text-decoration: none;">Break a leg</span>
+                </div>
+                <div class="item_right">
+                    <div class="edit">
+                        <span class="material-symbols-outlined">edit_note</span>
+                    </div>
+                    <div class="delete">
+                      <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list_items">
+                <div class="item_left">
+                    <span class="check">
+                        <input type="checkbox">
+                    </span>
+                    <span class="contents" style="text-decoration: none;">Love javascript to the fullest</span>
+                </div>
+                <div class="item_right">
+                    <div class="edit">
+                        <span class="material-symbols-outlined">edit_note</span>
+                    </div>
+                    <div class="delete">
+                      <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+            </li>
+          </ul>
+      </div>
+     
+
+        <div class="footer">
+          <span class="unfinished"> you have <span class="pending"></span> unfinished tasks  </span>
+          <button class="clear_btn">clear all</button>
+        </div>
+    </div>
+   
+    <script src="main.js"></script>
+  </body>
+</html>
