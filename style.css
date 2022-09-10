@@ -47,27 +47,27 @@ h4{
     align-items: center;
 }
 
-button{
+.add_task{
     padding: 0.4rem 0.9rem;
     font-size: .95rem;
-    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
     border: none;
     outline: none;
-    background-color: #0008;
+    background-color: #333;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
-    /* opacity: 0.6;
+    /* opacity: .6;
     pointer-events: none; */
+}
+.add_task.active{
+    opacity: 1;
+    pointer-events: all;
 }
 button:hover{
     background-color: #fffb00ea;
     color: #000;
 }
-/* button:active{
-    opacity: 1;
-    pointer-events: auto;
-} */
+
 input[type=text]{
     padding: 0.4rem;
     width: 53%;
@@ -77,32 +77,50 @@ input[type=text]{
 .add_list{
     margin-top: 2rem;
 }
-.add_list>ul>li{
+.add_list{
     list-style: none;
     font-size: .9rem;
     text-transform: capitalize;
-    padding-bottom: 0.5em;
-    margin-top: 0.7rem;
-    margin-bottom: 1.1rem;
-    border-bottom: 1px solid rgba(0,0,0,.253);
+    margin-top: 1rem;
+   
     color: #000000b2;
 }
 
-.list_items, .item_left{
+.list_item{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.253);
+    padding-bottom: 0.6em;
+    margin-bottom: 1.1rem;
 }
 input[type=checkbox]{
     cursor: pointer;
+    text-decoration: line-through;
 }
 .contents{
     margin-left: 0.4rem;
 }
 .item_right{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    gap: 12px;
+}
+.item_right i{
+    font-size: 1.2rem;
+    color: #0008;
+    cursor: pointer;
+}
+.item_right i:hover{
+    background: #333;
+    color: #fff;
+   
+}
+.check{
+    text-decoration: line-through;
+    color: #333;
+    
 }
 .footer{
     text-transform: capitalize;
@@ -113,7 +131,6 @@ input[type=checkbox]{
     align-items: center;
 }
 .unfinished{
-    font-family: Trebuchet MS,Lucida Sans Unicode,Lucida Grande,Lucida Sans,Arial,sans-serif;
     font-weight: 600;
     color: #000;
     animation: AnimateText 8s linear infinite;
@@ -122,7 +139,6 @@ input[type=checkbox]{
 }
 .clear_btn{
     font-size: .95rem;
-    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
     border: none;
     outline: none;
     color: #fff;
@@ -138,10 +154,4 @@ input[type=checkbox]{
 .edit, .delete{
     cursor: pointer;
     padding: 0.2rem;
-}
-.material-symbols-outlined:hover{
-    background-color: #333;
-    display: block;
-    color: #fff
-    /* padding:1rem */
 }
