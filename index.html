@@ -7,9 +7,13 @@
     <title>Todo_List App</title>
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -28,29 +32,29 @@
       <div class="add_list">
         <div class="list_item">
           <div class="item_left">
-            <input type="checkbox"/>
+            <input type="checkbox" />
             <span class="contents">Create a video for youtube</span>
           </div>
           <div class="item_right">
-            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-pen-to-square edit"></i>
             <i class="fa-regular fa-trash-can"></i>
           </div>
         </div>
 
         <div class="list_item">
           <div class="item_left">
-            <input type="checkbox"/>
+            <input type="checkbox" class="checked"/>
             <span class="contents">Break a bone</span>
           </div>
           <div class="item_right">
-            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-pen-to-square edit" ></i>
             <i class="fa-regular fa-trash-can"></i>
           </div>
         </div>
 
         <div class="list_item">
           <div class="item_left">
-            <input type="checkbox"/>
+            <input type="checkbox" />
             <span class="contents">Vanilla to the core!!</span>
           </div>
           <div class="item_right">
@@ -60,16 +64,17 @@
         </div>
       </div>
 
-      
-
-
       <div class="footer">
         <span class="unfinished">
           you have <span class="pending"></span> unfinished tasks
         </span>
-        <button class="clear_btn">clear all</button>
+        <button class="clear_btn" onclick="deleteAllElements()">
+          Clear All
+        </button>
       </div>
     </div>
+
+
 
     <script src="main.js"></script>
   </body>
